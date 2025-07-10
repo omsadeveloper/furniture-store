@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+    <script type="module" src="./main.js"></script>
+</head>
+<body class="bg-slate-100 dark:bg-zinc-800">
+    <header class="header bg-slate-100 dark:bg-zinc-800 py-4 flex items-center shadow-lg border-b-1 border-b-gray-300 sticky top-0 z-10">
+        <div class="container ">
+            <nav class="flex justify-between gap-2 items-center">
+                <div class="logo text-amber-500 w-40 text-2xl -translate-y-[3px]">
+                    <a href="/"><i class="fa-brands fa-slack"></i><span class="text-gray-800 dark:text-gray-300 ml-1 font-bold">Furnitura</span></a>
+                </div>
+                <div class="flex justify-center items-center gap-x-4">
+                    <ul id="nav-menu" class="absolute bg-slate-100 dark:bg-zinc-800 top-full left-0 w-full md:static md:w-auto md:bg-transparent p-6 md:p-0 gap-3 flex flex-col md:flex-row justify-start md:justify-center md:gap-x-4 text-gray-700 dark:text-gray-300 font-semibold z-100  hide-nav-menu md:show-nav-menu">
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">Home</a></li>
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">About</a></li>
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">Shop</a></li>
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">Testimony</a></li>
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">Contact</a></li>
+                        <li> <a href="#" class="hover:text-gray-800 dark:hover:text-white transform duration-300 ease-in-out">New version</a></li>
+                     </ul>
+                     <div class="nav-right flex justify-center items-center gap-x-4">
+                         <div class="light-dark-mod">
+                            <button class="toggle-btn light-btn dark:block font-semibold hidden ">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-6 h-6 text-gray-700 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transform duration-300 ease-in-out"
+                                >
+                                    <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                                    />
+                            </svg>
+                            </button>
+                            <button class="toggle-btn dark-btn font-semibold block dark:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    class="w-5 h-5 text-gray-700 hover:text-gray-800 dark:text-gray-700 transform duration-300 ease-in-out">
+                                <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75
+                                        0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25
+                                        C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                                </svg>
+                            </button>
+                              
+                         </div>
+                         <div id="menu-toggle-btn" class="nav-wraper md:hidden dark:text-gray-300 text-gray-800"><i class="fa-solid fa-bars text-xl"></i></div>
+                     </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Hero section -->
+     <section class="hero h-screen flex justify-center items-center overlay-light bg-cover bg-no-repeat bg-center bg-fixed">
+        <div class="flex flex-col justify-center items-center p-8 text-gray-200 mb-3">
+            <h1 class="text-4xl md:w-1/2 lg:w-2/3 lg:text-5xl xl:text-6xl text-center capitalize font-bold mb-6">transform your space with our premium furnit</h1>
+            <p class=" md:w-1/2 lg:w-2/3 text-center text-lg lg:text-xl xl:text-2xl mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor laborum animi quod ducimus</p>
+            <div class="flex gap-4 -z-0">
+                <button class="btn-main">show now</button>
+                <button class="btn-main">explore</button>
+            </div>
+        </div>
+     </section>
+     <!-- About Us section -->
+      <section class="about-us container my-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="md:w-1/2 border-[2px] border-zinc-500 p-1 overflow-hidden">
+                    <img class="w-full h-full object-cover" src="./images/about-us.jpg" alt="">
+                </div>
+                <div class="md:w-1/2 text-gray-800 dark:text-gray-300">
+                    <p class="text-2xl font-thin">what we do</p>
+                   <h2 class="about-us-title text-4xl font-bold capitalize mb-4">about us</h2>
+                   <p class=" mb-4 text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum nesciunt voluptatum fugiat cumque quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, pariatur ullam? Rem!</p>
+                   
+                   <p class=" mb-4 text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum nesciunt voluptatum fugiat cumque quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, pariatur ullam? Rem!</p>
+                   <p class=" mb-4 text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos harum nesciunt voluptatum fugiat cumque quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, quidem quam impedit, nihil molestiae laborum maiores libero, recusandae eos autem iste iure, pariatur ullam? Rem!</p>
+                   
+                </div>
+            </div>
+      </section>
+      <!-- Shop section -->
+       <section class="shop container  text-gray-800 dark:text-gray-300 py-12">
+        <h2 class="shop-now-title text-center text-4xl font-bold capitalize mb-8">Shop Now</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center gap-6">
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-1.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">2000$</del>
+                    <span class="text-lg font-bold">1500$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-2.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2 text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">3000$</del>
+                    <span class="text-lg font-bold">2500$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-3.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">2000$</del>
+                    <span class="text-lg font-bold">1500$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-4.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">6000$</del>
+                    <span class="text-lg font-bold">5500$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-5.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">4080$</del>
+                    <span class="text-lg font-bold">3400$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-6.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">5000$</del>
+                    <span class="text-lg font-bold">3500$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-7.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">3000$</del>
+                    <span class="text-lg font-bold">1000$</span>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg overflow-hidden max-w-96 group dark:border dark:border-zinc-700">
+                <div class="overflow-hidden w-full">
+                    <img class="w-full h-60 object-cover group-hover:scale-[1.1] transition duration-300 " src="./images/shop-sofa-8.jpg" alt="">
+                </div>
+                <div class="p-5">
+                    <h2 class="text-lg font-bold mb-2">sofa set</h2>
+                    <p class="leading-relaxed mb-2  text-gray-800 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. ratione suscipit.</p>
+                    <del class="text-slate-400 mr-">6000$</del>
+                    <span class="text-lg font-bold">4500$</span>
+                </div>
+            </div>          
+       </section>
+       <!-- Subscribe section -->
+        <section class="subscribe py-12 bg-zinc-800 text-gray-300 dark:bg-slate-200 dark:text-gray-800">
+            <div class="container">
+                <div class="flex flex-col-reverse lg:flex-row justify-center md:justify-evenly items-center gap-6">
+                    <div class="flex justify-center gap-4 md:gap-6">
+                        <img class="w-36 md:w-60 inline-block object-cover shadow-lg" src="./images/shop-sofa-2.jpg" alt="">
+                        <img class="w-36 md:w-60 inline-block object-cover shadow-lg" src="./images/shop-sofa-3.jpg" alt="">
+                    </div>
+                    <div class=" md:w-2/3 lg:w-1/3 flex flex-col gap-3 text-center">
+                        <h2 class="text-2xl font-semibold md:font-semibold">Subscribe to our Newsletter</h2>
+                        <form action="" class="relative">
+                            <input type="email" name="" id=""  placeholder="Email" class="w-full p-2 px-6 rounded-full outline-none">
+                            <button class="btn-subscribe absolute top-0 right-0">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimony sedtion -->
+         <section class="py-12  text-gray-800 dark:text-gray-300">
+            <div class="container">
+                <h2 class="shop-now-title text-center text-4xl font-bold capitalize mb-8">Testimony</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-6">
+                    <div class="testimon-item flex flex-col justify-center items-center rounded-lg shadow-lg p-6 bg-white dark:bg-gray-700">
+                        <img src="https://randomuser.me/api/portraits/men/9.jpg" alt="" class="block rounded-full object-cover w-24 border-4 border-slate-200 shadow-lg">
+                        <p class="leading-relaxed text-center py-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque nam reprehenderit."</p>
+                        <p class="text-center font-semibold text-slate-500 dark:text-slate-200">Jhone Riky</p>
+                    </div>
+                    <div class="testimon-item flex flex-col justify-center items-center rounded-lg shadow-lg p-6 bg-white dark:bg-gray-700">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="" class="block rounded-full object-cover w-24 border-4 border-slate-200 shadow-lg">
+                        <p class="leading-relaxed text-center py-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque nam reprehenderit."</p>
+                        <p class="text-center font-semibold text-slate-500 dark:text-slate-200">Laura Anderson</p>
+                    </div>
+                   
+                    <div class="testimon-item flex flex-col justify-center items-center rounded-lg shadow-lg p-6 bg-white dark:bg-gray-700">
+                        <img src="https://randomuser.me/api/portraits/men/83.jpg" alt="" class="block rounded-full object-cover w-24 border-4 border-slate-200 shadow-lg">
+                        <p class="leading-relaxed text-center py-4">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic atque nam reprehenderit."</p>
+                        <p class="text-center font-semibold text-slate-500 dark:text-slate-200">Jack Mathue</p>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
+         </section>
+         <!-- Footer section -->
+         <section class="footer  bg-zinc-800 text-gray-300 pt-12">
+            <div class="container">
+                <div class="flex flex-col justify-center items-center md:items-start md:flex-row md:justify-between gap-4 mb-8">
+                    <div class="logo text-amber-500 w-40 text-2xl -translate-y-[3px]">
+                        <a href="/"><i class="fa-brands fa-slack"></i><span class="text-gray-300 ml-1 font-bold">Furnitura</span></a>
+                    </div>
+                    <div class="flex flex-col gap-2 text-center">
+                        <h4 class="text-gray-300 font-semibold text-xl capitalize">Links</h4>
+                        <ul class="text-gray-300 flex flex-col justify-center gap-3">
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Home</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">About</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Shop</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Testimony</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-2 text-center">
+                        <h4 class="text-gray-300 font-semibold text-xl capitalize">contact</h4>
+                        <ul class="text-gray-300 flex flex-col justify-center gap-3">
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">FAQ</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Blog</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-2 text-center">
+                        <h4 class="text-gray-300 font-semibold text-xl capitalize">social</h4>
+                        <ul class="text-gray-300  flex flex-col justify-center gap-3">
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">188-233-233</a></li>
+                            <li> <a href="#" class="hover:text-white transform duration-300 ease-in-out">Email@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 border-t-[1px] border-gray-50/20">
+                <h3 class="text-gray-50/50 text-center text-sm md:text-base">&copy; 2025 OMSA Developer. All rights reserved.</h3>
+            </div>
+         </section>
+    <script type="module" src="./toggleMenu.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+        .btn-main{
+            @apply bg-amber-500 hover:bg-amber-400 text-black capitalize font-bold transform duration-300 ease-in-out py-2 px-6 
+            rounded-full outline outline-1 outline-offset-[3px] outline-amber-100
+        }
+        .btn-normal{
+            @apply bg-amber-500 hover:bg-amber-400 text-black capitalize font-bold transform duration-300 ease-in-out py-2 px-6 
+            rounded-md outline outline-1 outline-offset-[3px] outline-amber-100
+        }
+        
+        .btn-subscribe{
+            @apply bg-amber-500 hover:bg-amber-400 text-black capitalize font-semibold md:font-bold transform duration-300 
+            ease-in-out py-2 px-4 
+            rounded-r-full
+        }
+        
+    
+}
+
+@layer utilities {
+    .overlay-light{
+        background-image: linear-gradient(rgb(0,0,0,1),rgb(0,0,0,0.1)), url('../public/images/hero-img.jpg');
+    }
+}

@@ -1,0 +1,29 @@
+npm install -D vite tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p --esm 
+
+create new folder --> src --> all files in it like (index.html,....etc)
+*************************************************
+create new file --> vite.config.js && open init
+>>
+import { defineConfig } from "vite";
+
+export default({
+    root:"./src"
+});
+
+*************************************************
+create file main.css && in src/amin.css and in it add 
+>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*************************************
+
+create main.js && open ===> import 'main.css'
+
+**************************************
+import main.js in indext.html
+in header section in index.html 
+add -->  <script type="module" src="./main.js"></script>
+this is profsionl way to import main.css in index.html
+**********************************************
